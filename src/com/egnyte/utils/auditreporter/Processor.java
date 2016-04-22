@@ -3,12 +3,26 @@ package com.egnyte.utils.auditreporter;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+
+/**
+ * The Class Processor.
+ * @author Yasith Lokuge
+ */
 public class Processor {
 	
+	/** The Constant TOP_ARGUMENT. */
 	private static final String TOP_ARGUMENT = "--top";
+	
+	/** The Constant CSV_ARGUMENT. */
 	private static final String CSV_ARGUMENT = "-c";
 	
 
+	/**
+	 * Process.
+	 *
+	 * @param args the args
+	 * @return the args
+	 */
 	public Args Process(String[] args){	
 		
 		Args argsObject = new Args();

@@ -4,10 +4,22 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+
+/**
+ * The Class PlainTextPrinter.
+ * @author Yasith Lokuge
+ */
 public class PlainTextPrinter {
 			
+	/** The records. */
 	List<Record> records = new ArrayList<Record>();
 	
+	/**
+	 * Instantiates a new plain text printer.
+	 *
+	 * @param users the users
+	 * @param files the files
+	 */
 	public PlainTextPrinter(List<List<String>> users, List<List<String>> files) {
 		
 		for (List<String> userRow : users) {
@@ -29,6 +41,11 @@ public class PlainTextPrinter {
 		}
 	}
 
+	/**
+	 * Prints the top.
+	 *
+	 * @param number the number
+	 */
 	public void printTop(int number){
 		
 		
@@ -49,6 +66,9 @@ public class PlainTextPrinter {
 		}
 	}
 	
+	/**
+	 * Prints the.
+	 */
 	public void print(){
 		printHeader();
 		String user = "";
@@ -63,20 +83,39 @@ public class PlainTextPrinter {
 		}
 	}
 	
+	/**
+	 * Prints the header.
+	 */
 	private void printHeader() {
 		System.out.println("Audit Report");
 		System.out.println("============");
 	}
 	
+	/**
+	 * Prints the top header.
+	 *
+	 * @param number the number
+	 */
 	private void printTopHeader(int number) {
 		System.out.println("Top #"+number+" Report");
 		System.out.println("==================");
 	}
 
+	/**
+	 * Prints the user header.
+	 *
+	 * @param userName the user name
+	 */
 	private void printUserHeader(String userName) {
 		System.out.println("## User: " + userName);
 	}
 
+	/**
+	 * Prints the file.
+	 *
+	 * @param fileName the file name
+	 * @param fileSize the file size
+	 */
 	private void printFile(String fileName, long fileSize) {
 		System.out.println("* " + fileName + " ==> " + fileSize + " bytes");
 	}

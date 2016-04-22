@@ -8,12 +8,26 @@ import java.util.Arrays;
 import java.util.List;
 
 
+
+/**
+ * The Class Runner.
+ * @author Yasith Lokuge
+ */
 public class Runner {
 
+	/** The users. */
 	private static List<List<String>> users;
+	
+	/** The files. */
 	private static List<List<String>> files;
 
 	
+	/**
+	 * The main method.
+	 *
+	 * @param args the arguments
+	 * @throws IOException Signals that an I/O exception has occurred.
+	 */
 	public static void main(String[] args) throws IOException {
 		Runner r = new Runner();
 		
@@ -60,6 +74,13 @@ public class Runner {
 		
 	}	
 	
+	/**
+	 * Load data.
+	 *
+	 * @param userFn the user fn
+	 * @param filesFn the files fn
+	 * @throws IOException Signals that an I/O exception has occurred.
+	 */
 	private void loadData(String userFn, String filesFn) throws IOException {
 		String line;
 
